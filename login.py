@@ -1,5 +1,6 @@
 import customtkinter as ctk
 import mainWindow
+import PagPricipal
 
 #Definir apariencia
 ctk.set_appearance_mode('light')
@@ -12,8 +13,7 @@ app.title("Inicio de sesion")
 
 def login():
     app.destroy()
-    mainWindow.bd('test','1245')     
-
+    PagPricipal.iniciar_aplicacion()
 
 # Definir el label
 label = ctk.CTkLabel(app,text="Inicio de sesion") 
@@ -40,7 +40,7 @@ user_pass= ctk.CTkEntry(master=frame,
 						show="*") 
 user_pass.pack(pady=12,padx=10) 
 
-# CCreacion del boton login
+# Creacion del boton login
 button = ctk.CTkButton(master=frame, 
 					text='Login',command=login) 
 button.pack(pady=12,padx=10) 
