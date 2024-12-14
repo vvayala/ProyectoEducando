@@ -120,7 +120,7 @@ def mostrar_cuento(cuento, usuario):
     ventana_cuento = tk.Toplevel()
     ventana_cuento.title(cuento['titulo'])
     ventana_cuento.resizable(False,False)
-    ventana_cuento.geometry("600x600")
+    ventana_cuento.geometry("600x660")
 
     titulo_label = tk.Label(ventana_cuento, text=f"Título: {cuento['titulo']}", font=("Arial", 16, "bold"), wraplength=500)
     titulo_label.pack(pady=10)
@@ -134,7 +134,7 @@ def mostrar_cuento(cuento, usuario):
     contenido = leer_contenido_archivo(cuento["contenido"])
     contenido_text.insert(tk.END, contenido)
     
-    # esta funcion se ejecutara cuando se cierra la ventana
+     # Función que se ejecutará al cerrar la ventana o al presionar el botón "Finalizar"
     def on_closing():
         end_time = datetime.now()
         tiempo = (end_time - start_time).seconds
@@ -142,7 +142,15 @@ def mostrar_cuento(cuento, usuario):
         # usuarios[usuario]["tiempo_uso"] += tiempo
         messagebox.showinfo("Actividad Completa", f"Lectura completada por {usuario} en {tiempo} segundos.")
         ventana_cuento.destroy()
-        
+
+    finalizar_button = tk.Button(ventana_cuento, 
+                                text="Finalizar",  
+                                bg="#4CAF50",  
+                                borderwidth=2, 
+                                fg="white",
+                                relief="raised",  
+                                font=("Arial", 12, "bold"), command=on_closing)
+    finalizar_button.pack(pady=20)
     start_time = datetime.now()
     ventana_cuento.protocol("WM_DELETE_WINDOW", on_closing)
 
