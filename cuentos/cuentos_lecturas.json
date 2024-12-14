@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "El gato con botas",
+        "contenido": "cuentos/gato_con_botas.txt",
+        "autor": "Charles Perrault"
+    },
+    {
+        "titulo": "El flautista de Hamelín",
+        "contenido": "cuentos/flautista_hamelin.txt",
+        "autor": "Robert Browning "
+    },
+    {
+        "titulo": "La liebre y la tortuga",
+        "contenido": "cuentos/La_liebre_y_la_tortuga.txt",
+        "autor": "Paola Artmann"
+    },
+    {
+        "titulo": "Aladino y la lámpara maravillosa",
+        "contenido": "cuentos/aladino.txt",
+        "autor": "Paola Artmann"
+    }
+]

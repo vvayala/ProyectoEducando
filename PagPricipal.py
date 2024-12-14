@@ -1,10 +1,12 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk, messagebox, scrolledtext
 from datetime import datetime
 import time
 import matplotlib.pyplot as plt # type: ignore
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg # type: ignore
 import mainWindow
+import json
+
 
 # Diccionarios para almacenar datos
 usuarios = {}
@@ -103,41 +105,111 @@ def ventana_registro():
 
     tk.Button(ventana_registro, text="Registrar", command=registrar, bg="#4caf50", fg="white").pack(pady=20)
 
+# funciones implementadas para las lecturas
+archivo_json = "cuentos/cuentos_lecturas.json"
 
+def cargar_cuentos(archivo):
+    with open(archivo, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def leer_contenido_archivo(ruta):
+    with open(ruta, "r", encoding="utf-8") as f:
+        return f.read()
+
+def mostrar_cuento(cuento, usuario):
+    ventana_cuento = tk.Toplevel()
+    ventana_cuento.title(cuento['titulo'])
+    ventana_cuento.resizable(False,False)
+    ventana_cuento.geometry("600x600")
+
+    titulo_label = tk.Label(ventana_cuento, text=f"Título: {cuento['titulo']}", font=("Arial", 16, "bold"), wraplength=500)
+    titulo_label.pack(pady=10)
+
+    autor_label = tk.Label(ventana_cuento, text=f"Autor: {cuento.get('autor', 'Desconocido')}", font=("Arial", 12, "italic"))
+    autor_label.pack(pady=5)
+
+    contenido_text = scrolledtext.ScrolledText(ventana_cuento, wrap=tk.WORD, width=70, height=25, font=("Arial", 12))
+    contenido_text.pack(pady=10)
+
+    contenido = leer_contenido_archivo(cuento["contenido"])
+    contenido_text.insert(tk.END, contenido)
+    
+    # esta funcion se ejecutara cuando se cierra la ventana
+    def on_closing():
+        end_time = datetime.now()
+        tiempo = (end_time - start_time).seconds
+        # usuarios[usuario]["lecturas"] += 1
+        # usuarios[usuario]["tiempo_uso"] += tiempo
+        messagebox.showinfo("Actividad Completa", f"Lectura completada por {usuario} en {tiempo} segundos.")
+        ventana_cuento.destroy()
+        
+    start_time = datetime.now()
+    ventana_cuento.protocol("WM_DELETE_WINDOW", on_closing)
+
+def crear_botones(ventana, cuentos, usuario):
+    for cuento in cuentos:
+        boton = tk.Button(ventana, 
+                          text=cuento['titulo'], 
+                          command=lambda c=cuento: mostrar_cuento(c, usuario),
+                          font=("Arial", 12), 
+                          fg="white",  # Color 
+                          bg="#4CAF50",  #  fondo
+                          relief="raised",  # borde
+                          borderwidth=2,
+                          width=34, #ancho en x
+                          height=2,  # Alto en y
+                          padx=10,  
+                          pady=5) 
+        boton.pack(pady=5)
+
+        
 def lecturas():
-    def verLectura(nombre):
-        contenido = mainWindow.getLectura(nombre)  
-        verLectura = tk.Toplevel()
-        verLectura.title(nombre)
-        verLectura.geometry("400x800")
-        verLectura.configure(bg="#f0f8ff")
+    
+    cuentos = cargar_cuentos(archivo_json)
 
-        txtFrame = tk.Frame(verLectura, bg="#f0f8ff")
-        txtFrame.pack(fill=tk.BOTH, expand=True, pady=10, padx=10) 
-        text_widget = tk.Text(txtFrame, wrap=tk.WORD, font=("Arial", 12), bg="#f0f8ff", state=tk.NORMAL) 
-        text_widget.insert(tk.END, contenido) 
-        text_widget.config(state=tk.DISABLED) 
-        # Hacer que el widget de texto sea de solo lectura 
-        scrollbar = tk.Scrollbar(txtFrame, command=text_widget.yview) 
-        text_widget.configure(yscrollcommand=scrollbar.set) 
-        scrollbar.pack(side=tk.RIGHT, fill=tk.Y) 
-        text_widget.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+    ventana = tk.Toplevel()
+    ventana.title("Sección de lectura")
+    ventana.geometry("600x600")
 
-        tk.Button(verLectura, text="Finalizar", command=verLectura.destroy, bg="#4caf50", fg="white").pack(pady=20)
+    titulo_label = tk.Label(ventana, text="Cuentos Disponibles", font=("Arial", 16, "bold"), wraplength=500)
+    titulo_label.pack(pady=10)
+
+    crear_botones(ventana, cuentos, 0)
+    
+    
+    # def verLectura(nombre):
+    #     contenido = mainWindow.getLectura(nombre)  
+    #     verLectura = tk.Toplevel()
+    #     verLectura.title(nombre)
+    #     verLectura.geometry("400x800")
+    #     verLectura.configure(bg="#f0f8ff")
+
+    #     txtFrame = tk.Frame(verLectura, bg="#f0f8ff")
+    #     txtFrame.pack(fill=tk.BOTH, expand=True, pady=10, padx=10) 
+    #     text_widget = tk.Text(txtFrame, wrap=tk.WORD, font=("Arial", 12), bg="#f0f8ff", state=tk.NORMAL) 
+    #     text_widget.insert(tk.END, contenido) 
+    #     text_widget.config(state=tk.DISABLED) 
+    #     # Hacer que el widget de texto sea de solo lectura 
+    #     scrollbar = tk.Scrollbar(txtFrame, command=text_widget.yview) 
+    #     text_widget.configure(yscrollcommand=scrollbar.set) 
+    #     scrollbar.pack(side=tk.RIGHT, fill=tk.Y) 
+    #     text_widget.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+    #     tk.Button(verLectura, text="Finalizar", command=verLectura.destroy, bg="#4caf50", fg="white").pack(pady=20)
 
 
-    lecturas = tk.Toplevel()
-    lecturas.title("Lecturas disponibles")
-    lecturas.geometry("400x200")
-    lecturas.configure(bg="#f0f8ff")
-    lecturas.grid_columnconfigure(0,weight=1)
-    lecturas.grid_columnconfigure(1,weight=1)
+    # lecturas = tk.Toplevel()
+    # lecturas.title("Lecturas disponibles")
+    # lecturas.geometry("400x200")
+    # lecturas.configure(bg="#f0f8ff")
+    # lecturas.grid_columnconfigure(0,weight=1)
+    # lecturas.grid_columnconfigure(1,weight=1)
 
-    tk.Button(lecturas, text="La caperucita roja", command=lambda : verLectura("La caperucita roja"), bg="#4caf50", fg="white").grid(row=0, column=0, padx=20, pady=20)
-    tk.Button(lecturas, text="Blancanieves", command= lambda : verLectura("Blancanieves"), bg="#4caf50", fg="white").grid(row=0, column=1, padx=20, pady=20)
-    tk.Button(lecturas, text="La cenicienta", command= lambda : verLectura("La cenicienta"), bg="#4caf50", fg="white").grid(row=1, column=0, padx=20, pady=20)
-    tk.Button(lecturas, text="La bella y la bestia",command= lambda : verLectura("La bella y la bestia"), bg="#4caf50", fg="white").grid(row=1, column=1, padx=20, pady=20)
-    tk.Button(lecturas, text="La bella durmiente", command= lambda : verLectura("La bella durmiente"), bg="#4caf50", fg="white").grid(row=2, column=0, padx=20, pady=20) 
+    # tk.Button(lecturas, text="La caperucita roja", command=lambda : verLectura("La caperucita roja"), bg="#4caf50", fg="white").grid(row=0, column=0, padx=20, pady=20)
+    # tk.Button(lecturas, text="Blancanieves", command= lambda : verLectura("Blancanieves"), bg="#4caf50", fg="white").grid(row=0, column=1, padx=20, pady=20)
+    # tk.Button(lecturas, text="La cenicienta", command= lambda : verLectura("La cenicienta"), bg="#4caf50", fg="white").grid(row=1, column=0, padx=20, pady=20)
+    # tk.Button(lecturas, text="La bella y la bestia",command= lambda : verLectura("La bella y la bestia"), bg="#4caf50", fg="white").grid(row=1, column=1, padx=20, pady=20)
+    # tk.Button(lecturas, text="La bella durmiente", command= lambda : verLectura("La bella durmiente"), bg="#4caf50", fg="white").grid(row=2, column=0, padx=20, pady=20) 
 
 def ventana_entrenamiento():
     usuario = 0
@@ -225,4 +297,4 @@ def comparar_resultados(usuario):
 
 # Iniciar la aplicación
 if __name__ == "__main__":
-    iniciar_aplicacion()
+    iniciar_aplicacion([])
