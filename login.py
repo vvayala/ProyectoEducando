@@ -17,7 +17,7 @@ def login():
 	contrasena = user_pass.get() 
 	if mainWindow.bd(usuario, contrasena):
 		app.destroy()
-		PagPricipal.iniciar_aplicacion()        
+		PagPricipal.iniciar_aplicacion(usuario)        
 	else: 
 		messagebox.showerror("Atencion!","Usuario o contrasena incorrectos!")
 		user_entry.delete(0,ctk.END)
