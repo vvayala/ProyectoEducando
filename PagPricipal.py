@@ -220,11 +220,11 @@ def lecturas():
     # tk.Button(lecturas, text="La bella durmiente", command= lambda : verLectura("La bella durmiente"), bg="#4caf50", fg="white").grid(row=2, column=0, padx=20, pady=20) 
 
 def ventana_entrenamiento():
-    usuario = 0
+    usuario = seleccionar_usuario()
     if not usuario:
         return
     start_time = datetime.now()
-    time.sleep(3)
+    import Entrenamiento
     end_time = datetime.now()
     tiempo = (end_time - start_time).seconds
     usuarios[usuario]["entrenamientos"] += 1
