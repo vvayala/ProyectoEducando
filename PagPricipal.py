@@ -118,8 +118,7 @@ def leer_contenido_archivo(ruta):
 
 def mostrar_cuento(cuento, usuario):
     ventana_cuento = tk.Toplevel()
-    ventana_cuento.title(cuento['titulo'])
-    ventana_cuento.resizable(False,False)
+    ventana_cuento.title(cuento['titulo'])ventana_cuento.resizable(False,False)
     ventana_cuento.geometry("600x600")
 
     titulo_label = tk.Label(ventana_cuento, text=f"Título: {cuento['titulo']}", font=("Arial", 16, "bold"), wraplength=500)
@@ -297,4 +296,4 @@ def comparar_resultados(usuario):
 
 # Iniciar la aplicación
 if __name__ == "__main__":
-    iniciar_aplicacion([])
+    iniciar_aplicacion()
