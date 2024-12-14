@@ -2,10 +2,23 @@ import customtkinter as ctk
 import pyodbc
 from tkinter import messagebox
 
-def bd(usuario, contrasena):
+connection = None
+def conexion():
+    global connection 
     try:
         connection = pyodbc.connect('Driver={SQL Server};' 'Server=.\SQLEXPRESS;' 'Database=Educando;' 'Trusted_connection=yes;')
         cursor = connection.cursor() 
+
+        return cursor
+    
+    except pyodbc.Error as e:
+        messagebox.showerror("Error", f"Error en la conexión: {e}") 
+        return None
+    
+    
+def bd(usuario, contrasena):
+    try:
+        cursor = conexion()
         cursor.execute("SELECT * FROM Usuarios WHERE Usuario = ? AND Contrasena = ?", (usuario, contrasena)) 
         result = cursor.fetchone() 
         return result is not None 
@@ -15,11 +28,7 @@ def bd(usuario, contrasena):
     
 def registrarUsuario(nombre, password, email):
     try:
-        connection = pyodbc.connect('Driver={SQL Server};'
-                                    'Server=.\SQLEXPRESS;'
-                                    'Database=Educando;'
-                                    'Trusted_Connection=yes;')
-        cursor = connection.cursor()
+        cursor = conexion()
         
         # Verificar si el usuario ya está registrado
         cursor.execute("SELECT * FROM Usuarios WHERE Email = ?", email)
@@ -43,11 +52,7 @@ from tkinter import messagebox
 
 def getLectura(name):
     try:
-        connection = pyodbc.connect('Driver={SQL Server};'
-                                    'Server=.\SQLEXPRESS;'
-                                    'Database=Educando;'
-                                    'Trusted_Connection=yes;')
-        cursor = connection.cursor()
+        cursor = conexion()
         
         # Realizar la consulta para obtener la lectura
         cursor.execute("SELECT Contenido FROM Lecciones WHERE NombreLeccion = ?", name)
@@ -61,11 +66,7 @@ def getLectura(name):
 
 def getLectura(name):
     try:
-        connection = pyodbc.connect('Driver={SQL Server};'
-                                    'Server=.\SQLEXPRESS;'
-                                    'Database=Educando;'
-                                    'Trusted_Connection=yes;')
-        cursor = connection.cursor()
+        cursor = conexion()
         
         # Realizar la consulta para obtener la lectura
         cursor.execute("SELECT Contenido FROM Lecciones WHERE NombreLeccion = ?", name)
@@ -78,11 +79,7 @@ def getLectura(name):
 
 def verProgreso():
     try:
-        connection = pyodbc.connect('Driver={SQL Server};'
-                                    'Server=.\SQLEXPRESS;'
-                                    'Database=Educando;'
-                                    'Trusted_Connection=yes;')
-        cursor = connection.cursor()
+        cursor = conexion()
         
         query = """SELECT U.Usuario AS 'USUARIOS', 
         COUNT(L.IDLeccion) AS 'LECCIONES COMPLETADAS',
@@ -103,11 +100,7 @@ def verProgreso():
 
 def getUsuarios():
     try:
-        connection = pyodbc.connect('Driver={SQL Server};'
-                                    'Server=.\SQLEXPRESS;'
-                                    'Database=Educando;'
-                                    'Trusted_Connection=yes;')
-        cursor = connection.cursor()
+        cursor = conexion()
         
         cursor.execute("SELECT Usuario FROM Usuarios")
         result = cursor.fetchall()
@@ -123,11 +116,7 @@ def getUsuarios():
 
 def getUsuariosInfo(nombre):
     try:
-        connection = pyodbc.connect('Driver={SQL Server};'
-                                    'Server=.\SQLEXPRESS;'
-                                    'Database=Educando;'
-                                    'Trusted_Connection=yes;')
-        cursor = connection.cursor()
+        cursor = conexion()
         
         query = """SELECT U.Usuario AS 'USUARIOS', 
         COUNT(L.IDLeccion) AS 'LECCIONES COMPLETADAS',
