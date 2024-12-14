@@ -4,13 +4,14 @@ from datetime import datetime
 import time
 import matplotlib.pyplot as plt # type: ignore
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg # type: ignore
+import mainWindow
 
 # Diccionarios para almacenar datos
 usuarios = {}
 grupos = {"Tradicional": [], "Interactivo": []}
 
 # Ventana principal
-def iniciar_aplicacion():
+def iniciar_aplicacion(usuario):
     ventana = tk.Tk()
     ventana.title("Aplicación Educativa Interactiva")
     ventana.geometry("800x600")
@@ -18,7 +19,7 @@ def iniciar_aplicacion():
 
     tk.Label(
         ventana,
-        text="Bienvenido a la Aplicación Educativa",
+        text=f"Bienvenido a la Aplicación Educativa {usuario}",
         font=("Arial", 20, "bold"),
         fg="#333",
         bg="#f0f8ff",
@@ -41,10 +42,10 @@ def iniciar_aplicacion():
 
     botones = [
         ("Registro de Usuarios", ventana_registro),
-        ("Revisiones de Lectura", ventana_lecturas),
+        ("Revisiones de Lectura", lecturas),
         ("Sesión de Entrenamiento", ventana_entrenamiento),
         ("Ver Progreso de Usuarios", mostrar_progreso),
-        ("Comparar Grupos de Control", comparar_grupos),
+        ("Comparar Grupos de Control",lambda : comparar_resultados(usuario)),
     ]
 
     for texto, comando in botones:
@@ -72,17 +73,16 @@ def iniciar_aplicacion():
 def ventana_registro():
     def registrar():
         nombre = entrada_nombre.get()
-        grupo = var_grupo.get()
-        if not nombre or grupo not in grupos:
+        contrasena = entrada_contrasena.get()
+        email = entrada_email.get()
+        
+        if not nombre or not contrasena or not email:
             messagebox.showerror("Error", "Por favor, ingrese datos válidos.")
             return
-        if nombre in usuarios:
-            messagebox.showerror("Error", "El usuario ya está registrado.")
-            return
-        usuarios[nombre] = {"grupo": grupo, "lecturas": 0, "entrenamientos": 0, "tiempo_uso": 0}
-        grupos[grupo].append(nombre)
-        messagebox.showinfo("Éxito", f"Usuario {nombre} registrado en el grupo {grupo}.")
-        ventana_registro.destroy()
+        
+        if mainWindow.registrarUsuario(nombre, contrasena, email):
+            messagebox.showinfo("Completado","Usuario agregado con exito!")
+            ventana_registro.destroy()
 
     ventana_registro = tk.Toplevel()
     ventana_registro.title("Registro de Usuarios")
@@ -93,29 +93,54 @@ def ventana_registro():
     entrada_nombre = tk.Entry(ventana_registro, font=("Arial", 12))
     entrada_nombre.pack()
 
-    var_grupo = tk.StringVar(value="Tradicional")
-    tk.Label(ventana_registro, text="Selecciona un grupo:", font=("Arial", 12), bg="#f0f8ff").pack(pady=10)
-    tk.Radiobutton(ventana_registro, text="Tradicional", variable=var_grupo, value="Tradicional", bg="#f0f8ff").pack()
-    tk.Radiobutton(ventana_registro, text="Interactivo", variable=var_grupo, value="Interactivo", bg="#f0f8ff").pack()
+    tk.Label(ventana_registro, text="Contraseña:", font=("Arial", 12), bg="#f0f8ff").pack(pady=10)
+    entrada_contrasena = tk.Entry(ventana_registro, show='*', font=("Arial", 12))
+    entrada_contrasena.pack()
+
+    tk.Label(ventana_registro, text="Email:", font=("Arial", 12), bg="#f0f8ff").pack(pady=10)
+    entrada_email = tk.Entry(ventana_registro, font=("Arial", 12))
+    entrada_email.pack()
 
     tk.Button(ventana_registro, text="Registrar", command=registrar, bg="#4caf50", fg="white").pack(pady=20)
 
 
-def ventana_lecturas():
-    usuario = seleccionar_usuario()
-    if not usuario:
-        return
-    start_time = datetime.now()
-    time.sleep(2)
-    end_time = datetime.now()
-    tiempo = (end_time - start_time).seconds
-    usuarios[usuario]["lecturas"] += 1
-    usuarios[usuario]["tiempo_uso"] += tiempo
-    messagebox.showinfo("Actividad Completa", f"Lectura completada por {usuario} en {tiempo} segundos.")
+def lecturas():
+    def verLectura(nombre):
+        contenido = mainWindow.getLectura(nombre)  
+        verLectura = tk.Toplevel()
+        verLectura.title(nombre)
+        verLectura.geometry("400x800")
+        verLectura.configure(bg="#f0f8ff")
 
+        txtFrame = tk.Frame(verLectura, bg="#f0f8ff")
+        txtFrame.pack(fill=tk.BOTH, expand=True, pady=10, padx=10) 
+        text_widget = tk.Text(txtFrame, wrap=tk.WORD, font=("Arial", 12), bg="#f0f8ff", state=tk.NORMAL) 
+        text_widget.insert(tk.END, contenido) 
+        text_widget.config(state=tk.DISABLED) 
+        # Hacer que el widget de texto sea de solo lectura 
+        scrollbar = tk.Scrollbar(txtFrame, command=text_widget.yview) 
+        text_widget.configure(yscrollcommand=scrollbar.set) 
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y) 
+        text_widget.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+        tk.Button(verLectura, text="Finalizar", command=verLectura.destroy, bg="#4caf50", fg="white").pack(pady=20)
+
+
+    lecturas = tk.Toplevel()
+    lecturas.title("Lecturas disponibles")
+    lecturas.geometry("400x200")
+    lecturas.configure(bg="#f0f8ff")
+    lecturas.grid_columnconfigure(0,weight=1)
+    lecturas.grid_columnconfigure(1,weight=1)
+
+    tk.Button(lecturas, text="La caperucita roja", command=lambda : verLectura("La caperucita roja"), bg="#4caf50", fg="white").grid(row=0, column=0, padx=20, pady=20)
+    tk.Button(lecturas, text="Blancanieves", command= lambda : verLectura("Blancanieves"), bg="#4caf50", fg="white").grid(row=0, column=1, padx=20, pady=20)
+    tk.Button(lecturas, text="La cenicienta", command= lambda : verLectura("La cenicienta"), bg="#4caf50", fg="white").grid(row=1, column=0, padx=20, pady=20)
+    tk.Button(lecturas, text="La bella y la bestia",command= lambda : verLectura("La bella y la bestia"), bg="#4caf50", fg="white").grid(row=1, column=1, padx=20, pady=20)
+    tk.Button(lecturas, text="La bella durmiente", command= lambda : verLectura("La bella durmiente"), bg="#4caf50", fg="white").grid(row=2, column=0, padx=20, pady=20) 
 
 def ventana_entrenamiento():
-    usuario = seleccionar_usuario()
+    usuario = 0
     if not usuario:
         return
     start_time = datetime.now()
@@ -128,83 +153,76 @@ def ventana_entrenamiento():
 
 
 def mostrar_progreso():
-    if not usuarios:
-        messagebox.showerror("Error", "No hay usuarios registrados.")
-        return
+    mostrar_progreso = tk.Toplevel()
+    mostrar_progreso.title("Progreso de usuarios")
+    mostrar_progreso.geometry("800x600")
 
-    ventana_progreso = tk.Toplevel()
-    ventana_progreso.title("Progreso de Usuarios")
-    ventana_progreso.geometry("800x600")
+    datos = mainWindow.verProgreso()
+    
+    # Crear el Treeview
+    tree = ttk.Treeview(mostrar_progreso)
+    tree.pack(expand=True, fill='both')
+    
+    # Definir las columnas
+    tree["columns"] = ("USUARIOS", "LECCIONES COMPLETADAS", "TOTAL PREGUNTAS", "RESPUESTAS CORRECTAS", "Duracion",)
+    
+    # Configurar encabezados de columna
+    tree.column("#0", width=0, stretch=tk.NO)
+    tree.heading("#0", text="", anchor=tk.W)
+    
+    for col in tree["columns"]:
+        tree.column(col, anchor=tk.W, width=150)
+        tree.heading(col, text=col, anchor=tk.W)
+    # Insertar datos en el Treeview
+    for row in datos:
+      tree.insert("", tk.END, values=[row[0],row[1],row[2],row[3], row[4:]])
 
-    nombres = list(usuarios.keys())
-    tiempos = [usuarios[nombre]["tiempo_uso"] for nombre in nombres]
+def comparar_resultados(usuario):
+    comparar_resultados = tk.Toplevel()
+    comparar_resultados.title("Resultados")
+    comparar_resultados.geometry("800x400")
 
-    fig, ax = plt.subplots(figsize=(8, 6))
-    ax.bar(nombres, tiempos, color="#4caf50")
-    ax.set_title("Progreso por Usuario", fontsize=16)
-    ax.set_ylabel("Tiempo de Uso (s)", fontsize=12)
-    ax.set_xlabel("Usuarios", fontsize=12)
+    usuarios = mainWindow.getUsuarios()
 
-    canvas = FigureCanvasTkAgg(fig, master=ventana_progreso)
-    canvas.draw()
-    canvas.get_tk_widget().pack()
+    comparar_resultados.grid_columnconfigure(0,weight=1)
+    comparar_resultados.grid_columnconfigure(1,weight=1)
+    comparar_resultados.grid_columnconfigure(2,weight=1)    
+    
+    tk.Label(comparar_resultados, text="Selecciona un Usuario:").grid(row=1, column=0, padx=20, pady=20)  
+    combo = ttk.Combobox(comparar_resultados, values=usuarios)
+    combo.grid(row=2, column=0, padx=20, pady=20) 
+    tk.Label(comparar_resultados, text="Resultados").grid(row=3, column=0, padx=20, pady=20) 
+    tk.Label(comparar_resultados, text="Lecciones completadas").grid(row=4, column=0, padx=20, pady=20) 
+    tk.Label(comparar_resultados, text="Total preguntas").grid(row=5, column=0, padx=20, pady=20) 
+    tk.Label(comparar_resultados, text="Respuestas correctas").grid(row=6, column=0, padx=20, pady=20) 
+    tk.Label(comparar_resultados, text="Duracion").grid(row=7, column=0, padx=20, pady=20) 
 
+    actualUser = mainWindow.getUsuariosInfo(usuario)
 
-def comparar_grupos():
-    if not grupos["Tradicional"] and not grupos["Interactivo"]:
-        messagebox.showerror("Error", "No hay datos para comparar.")
-        return
+    if len(actualUser) > 0:
+        tk.Label(comparar_resultados, text=actualUser[0][0]).grid(row=3, column=1, padx=20, pady=20) 
+        tk.Label(comparar_resultados, text=actualUser[0][1]).grid(row=4, column=1, padx=20, pady=20) 
+        tk.Label(comparar_resultados, text=actualUser[0][2]).grid(row=5, column=1, padx=20, pady=20) 
+        tk.Label(comparar_resultados, text=actualUser[0][3]).grid(row=6, column=1, padx=20, pady=20) 
+        tk.Label(comparar_resultados, text=actualUser[0][4:]).grid(row=7, column=1, padx=20, pady=20) 
+    else:
+        messagebox.showerror("Error","El usuario no tiene lecciones")
+        comparar_resultados.destroy()
+    
+    def seleccionar_usuario(event): 
+        newUser = mainWindow.getUsuariosInfo(combo.get())
+        if len(newUser) > 0:
+            tk.Label(comparar_resultados, text=newUser[0][0]).grid(row=3, column=2, padx=20, pady=20) 
+            tk.Label(comparar_resultados, text=newUser[0][1]).grid(row=4, column=2, padx=20, pady=20) 
+            tk.Label(comparar_resultados, text=newUser[0][2]).grid(row=5, column=2, padx=20, pady=20) 
+            tk.Label(comparar_resultados, text=newUser[0][3]).grid(row=6, column=2, padx=20, pady=20) 
+            tk.Label(comparar_resultados, text=newUser[0][4:]).grid(row=7, column=2, padx=20, pady=20) 
+        else:
+            messagebox.showerror("Error","El usuario no tiene lecciones")
+            comparar_resultados.destroy()
 
-    ventana_comparacion = tk.Toplevel()
-    ventana_comparacion.title("Comparación de Grupos")
-    ventana_comparacion.geometry("800x600")
-
-    grupos_nombres = ["Tradicional", "Interactivo"]
-    tiempos = [
-        sum(usuarios[usuario]["tiempo_uso"] for usuario in grupos[grupo])
-        for grupo in grupos_nombres
-    ]
-
-    fig, ax = plt.subplots(figsize=(8, 6))
-    ax.bar(grupos_nombres, tiempos, color=["#2196f3", "#ff9800"])
-    ax.set_title("Comparación de Grupos de Control", fontsize=16)
-    ax.set_ylabel("Tiempo Total (s)", fontsize=12)
-    ax.set_xlabel("Grupos", fontsize=12)
-
-    canvas = FigureCanvasTkAgg(fig, master=ventana_comparacion)
-    canvas.draw()
-    canvas.get_tk_widget().pack()
-
-
-def seleccionar_usuario():
-    if not usuarios:
-        messagebox.showerror("Error", "No hay usuarios registrados.")
-        return None
-
-    def seleccionar():
-        seleccion = lista_usuarios.curselection()
-        if not seleccion:
-            messagebox.showerror("Error", "Por favor, selecciona un usuario.")
-            return
-        usuario_seleccionado.set(lista_usuarios.get(seleccion))
-        ventana_seleccion.destroy()
-
-    ventana_seleccion = tk.Toplevel()
-    ventana_seleccion.title("Seleccionar Usuario")
-    ventana_seleccion.geometry("300x300")
-    usuario_seleccionado = tk.StringVar()
-
-    tk.Label(ventana_seleccion, text="Selecciona un usuario:").pack(pady=10)
-    lista_usuarios = tk.Listbox(ventana_seleccion)
-    lista_usuarios.pack()
-    for usuario in usuarios:
-        lista_usuarios.insert(tk.END, usuario)
-
-    tk.Button(ventana_seleccion, text="Seleccionar", command=seleccionar).pack(pady=20)
-    ventana_seleccion.wait_window()
-    return usuario_seleccionado.get()
-
+    combo.bind("<<ComboboxSelected>>",seleccionar_usuario)
 
 # Iniciar la aplicación
 if __name__ == "__main__":
-    iniciar_aplicacion()
+    iniciar_aplicacion('Tania1')
