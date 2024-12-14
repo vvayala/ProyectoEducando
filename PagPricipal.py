@@ -225,4 +225,4 @@ def comparar_resultados(usuario):
 
 # Iniciar la aplicación
 if __name__ == "__main__":
-    iniciar_aplicacion('Tania1')
+    iniciar_aplicacion()
