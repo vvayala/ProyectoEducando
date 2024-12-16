@@ -2,94 +2,99 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 from quiz_datos import quiz_datos
 
-pregunta_actual = 0
 
-def comprobar_resp(choice):
-    pregunta = quiz_datos[pregunta_actual]
-    seleccion = opciones_botones[choice].cget("text")
+def entrenamiento():
 
-    if seleccion == pregunta["respuesta"]:
-        global score
-        score += 1
-        nota.config(text="Score: {}/{}".format(score, len(quiz_datos)))
-        resultado_titulo.config(text="Correcto!", foreground="green")
-    else:
-        resultado_titulo.config(text="Incorrecto!", foreground="red")
+    global pregunta_actual, score, quiz_datos
+    pregunta_actual = 0
+    score = 0
 
-    for boton in opciones_botones:
-        boton.config(state="disabled")
-    siguiente_boton.config(state="normal")
+    def comprobar_resp(choice):
+        global pregunta_actual, score
+        pregunta = quiz_datos[pregunta_actual]
+        seleccion = opciones_botones[choice].cget("text")
 
-def sig_pregunta():
-    global pregunta_actual
-    pregunta_actual += 1
-    
-    if pregunta_actual < len(quiz_datos):
-        mostrar_pregunta()
-    else:
-        messagebox.showinfo("Sesión completada",
-                            "Preguntas acertadas: {}/{}".format(score, len(quiz_datos)))
-        root.quit()
+        if seleccion == pregunta["respuesta"]:
+            #global score
+            score += 1
+            nota.config(text="Score: {}/{}".format(score, len(quiz_datos)))
+            resultado_titulo.config(text="Correcto!", foreground="green")
+        else:
+            resultado_titulo.config(text="Incorrecto!", foreground="red")
 
-def mostrar_pregunta():
-    pregunta = quiz_datos[pregunta_actual]
-    pregunta_titulo.config(text=pregunta["pregunta"])
+        for boton in opciones_botones:
+            boton.config(state="disabled")
+        siguiente_boton.config(state="normal")
 
-    opciones = pregunta["opciones"]
-    for i in range(4):
-        opciones_botones[i].config(text = opciones[i], state = "normal")
+    def sig_pregunta():
+        global pregunta_actual, score
+        pregunta_actual += 1
+        
+        if pregunta_actual < len(quiz_datos):
+            mostrar_pregunta()
+        else:
+            messagebox.showinfo("Sesión completada",
+                                "Preguntas acertadas: {}/{}".format(score, len(quiz_datos)))
+            root.quit()
 
-    resultado_titulo.config(text="")
-    siguiente_boton.config(state="disabled")
+    def mostrar_pregunta():
+        global pregunta_actual, score
+        pregunta = quiz_datos[pregunta_actual]
+        pregunta_titulo.config(text=pregunta["pregunta"])
 
-root = tk.Tk()
-root.title("Sesion de entrenamiento")
-root.geometry("500x400")
+        opciones = pregunta["opciones"]
+        for i in range(4):
+            opciones_botones[i].config(text = opciones[i], state = "normal")
 
-pregunta_titulo = ttk.Label(
-    root,
-    anchor="center",
-    wraplength=500,
-    padding=10
-)
-pregunta_titulo.pack(pady=10)
+        resultado_titulo.config(text="")
+        siguiente_boton.config(state="disabled")
 
-opciones_botones = []
-for i in range(4):
-    boton = ttk.Button(
+    root = tk.Tk()
+    root.title("Sesion de entrenamiento")
+    root.geometry("500x400")
+
+    pregunta_titulo = ttk.Label(
         root,
-        command=lambda i=i: comprobar_resp(i)
+        anchor="center",
+        wraplength=500,
+        padding=10
     )
-    boton.pack(pady=5)
-    opciones_botones.append(boton)
+    pregunta_titulo.pack(pady=10)
 
-resultado_titulo = ttk.Label(
-    root,
-    anchor = "center",
-    padding = 10
-)
-resultado_titulo.pack(pady=10)
+    opciones_botones = []
+    for i in range(4):
+        boton = ttk.Button(
+            root,
+            command=lambda i=i: comprobar_resp(i)
+        )
+        boton.pack(pady=5)
+        opciones_botones.append(boton)
 
-#resultado
-score = 0
+    resultado_titulo = ttk.Label(
+        root,
+        anchor = "center",
+        padding = 10
+    )
+    resultado_titulo.pack(pady=10)
 
-nota= ttk.Label(
-    root,
-    text="Score: 0/{}".format(len(quiz_datos)),
-    anchor="center",
-    padding=10
-)
-nota.pack(pady=10)
+    #resultado
+    score = 0
 
-siguiente_boton = ttk.Button(
-    root,
-    text="Siguiente",
-    command= sig_pregunta,
-    state="disabled"
-)
-siguiente_boton.pack(pady=10)
+    nota= ttk.Label(
+        root,
+        text="Score: 0/{}".format(len(quiz_datos)),
+        anchor="center",
+        padding=10
+    )
+    nota.pack(pady=10)
 
-mostrar_pregunta()
+    siguiente_boton = ttk.Button(
+        root,
+        text="Siguiente",
+        command= sig_pregunta,
+        state="disabled"
+    )
+    siguiente_boton.pack(pady=10)
 
-
-root.mainloop()
+    mostrar_pregunta()
+    root.mainloop()

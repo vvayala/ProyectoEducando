@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt # type: ignore
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg # type: ignore
 import mainWindow
 import json
+import Entrenamiento
 
 
 # Diccionarios para almacenar datos
@@ -45,7 +46,7 @@ def iniciar_aplicacion(usuario):
     botones = [
         ("Registro de Usuarios", ventana_registro),
         ("Revisiones de Lectura", lecturas),
-        ("Sesión de Entrenamiento", ventana_entrenamiento),
+        ("Sesión de Entrenamiento",ventana_entrenamiento),
         ("Ver Progreso de Usuarios", mostrar_progreso),
         ("Comparar Grupos de Control",lambda : comparar_resultados(usuario)),
     ]
@@ -220,17 +221,7 @@ def lecturas():
     # tk.Button(lecturas, text="La bella durmiente", command= lambda : verLectura("La bella durmiente"), bg="#4caf50", fg="white").grid(row=2, column=0, padx=20, pady=20) 
 
 def ventana_entrenamiento():
-    usuario = seleccionar_usuario()
-    if not usuario:
-        return
-    start_time = datetime.now()
-    import Entrenamiento
-    end_time = datetime.now()
-    tiempo = (end_time - start_time).seconds
-    usuarios[usuario]["entrenamientos"] += 1
-    usuarios[usuario]["tiempo_uso"] += tiempo
-    messagebox.showinfo("Actividad Completa", f"Entrenamiento completado por {usuario} en {tiempo} segundos.")
-
+    Entrenamiento.entrenamiento()
 
 def mostrar_progreso():
     mostrar_progreso = tk.Toplevel()
