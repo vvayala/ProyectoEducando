@@ -12,282 +12,282 @@ VALUES
 -- Insertar datos en la tabla Lecciones
 INSERT INTO Lecciones
 VALUES 
-('La caperucita roja', 'Érase una vez una niñita que lucía una hermosa capa de color rojo. Como la niña la usaba muy a menudo, todos la llamaban Caperucita Roja.
+('La caperucita roja', 'ï¿½rase una vez una niï¿½ita que lucï¿½a una hermosa capa de color rojo. Como la niï¿½a la usaba muy a menudo, todos la llamaban Caperucita Roja.
 
-Un día, la mamá de Caperucita Roja la llamó y le dijo:
+Un dï¿½a, la mamï¿½ de Caperucita Roja la llamï¿½ y le dijo:
 
-—Abuelita no se siente muy bien, he horneado unas galleticas y quiero que tú se las lleves.
+ï¿½Abuelita no se siente muy bien, he horneado unas galleticas y quiero que tï¿½ se las lleves.
 
-—Claro que sí —respondió Caperucita Roja, poniéndose su capa y llenando su canasta de galleticas recién horneadas.
+ï¿½Claro que sï¿½ ï¿½respondiï¿½ Caperucita Roja, poniï¿½ndose su capa y llenando su canasta de galleticas reciï¿½n horneadas.
 
-Antes de salir, su mamá le dijo:
+Antes de salir, su mamï¿½ le dijo:
 
-— Escúchame muy bien, quédate en el camino y nunca hables con extraños.
+ï¿½ Escï¿½chame muy bien, quï¿½date en el camino y nunca hables con extraï¿½os.
 
-—Yo sé mamá —respondió Caperucita Roja y salió inmediatamente hacia la casa de la abuelita.
+ï¿½Yo sï¿½ mamï¿½ ï¿½respondiï¿½ Caperucita Roja y saliï¿½ inmediatamente hacia la casa de la abuelita.
 
-Para llegar a casa de la abuelita, Caperucita debía atravesar un camino a lo largo del espeso bosque. En el camino, se encontró con el lobo.
+Para llegar a casa de la abuelita, Caperucita debï¿½a atravesar un camino a lo largo del espeso bosque. En el camino, se encontrï¿½ con el lobo.
 
-—Hola niñita, ¿hacia dónde te diriges en este maravilloso día? —preguntó el lobo.
+ï¿½Hola niï¿½ita, ï¿½hacia dï¿½nde te diriges en este maravilloso dï¿½a? ï¿½preguntï¿½ el lobo.
 
-Caperucita Roja recordó que su mamá le había advertido no hablar con extraños, pero el lobo lucía muy elegante, además era muy amigable y educado.
+Caperucita Roja recordï¿½ que su mamï¿½ le habï¿½a advertido no hablar con extraï¿½os, pero el lobo lucï¿½a muy elegante, ademï¿½s era muy amigable y educado.
 
-—Voy a la casa de abuelita, señor lobo —respondió la niña—. Ella se encuentra enferma y voy a llevarle estas galleticas para animarla un poco.
+ï¿½Voy a la casa de abuelita, seï¿½or lobo ï¿½respondiï¿½ la niï¿½aï¿½. Ella se encuentra enferma y voy a llevarle estas galleticas para animarla un poco.
 
-—¡Qué buena niña eres! —exclamó el lobo. —¿Qué tan lejos tienes que ir?
+ï¿½ï¿½Quï¿½ buena niï¿½a eres! ï¿½exclamï¿½ el lobo. ï¿½ï¿½Quï¿½ tan lejos tienes que ir?
 
-—¡Oh! Debo llegar hasta el final del camino, ahí vive abuelita—dijo Caperucita con una sonrisa.
+ï¿½ï¿½Oh! Debo llegar hasta el final del camino, ahï¿½ vive abuelitaï¿½dijo Caperucita con una sonrisa.
 
-—Te deseo un muy feliz día mi niña —respondió el lobo.
+ï¿½Te deseo un muy feliz dï¿½a mi niï¿½a ï¿½respondiï¿½ el lobo.
 
-El lobo se adentró en el bosque. Él tenía un enorme apetito y en realidad no era de confiar. Así que corrió hasta la casa de la abuela antes de que Caperucita pudiera alcanzarlo. Su plan era comerse a la abuela, a Caperucita Roja y a todas las galleticas recién horneadas.
+El lobo se adentrï¿½ en el bosque. ï¿½l tenï¿½a un enorme apetito y en realidad no era de confiar. Asï¿½ que corriï¿½ hasta la casa de la abuela antes de que Caperucita pudiera alcanzarlo. Su plan era comerse a la abuela, a Caperucita Roja y a todas las galleticas reciï¿½n horneadas.
 
-El lobo tocó la puerta de la abuela. Al verlo, la abuelita corrió despavorida dejando atrás su chal. El lobo tomó el chal de la viejecita y luego se puso sus lentes y su gorrito de noche. Rápidamente, se trepó en la cama de la abuelita, cubriéndose hasta la nariz con la manta. Pronto escuchó que tocaban la puerta:
+El lobo tocï¿½ la puerta de la abuela. Al verlo, la abuelita corriï¿½ despavorida dejando atrï¿½s su chal. El lobo tomï¿½ el chal de la viejecita y luego se puso sus lentes y su gorrito de noche. Rï¿½pidamente, se trepï¿½ en la cama de la abuelita, cubriï¿½ndose hasta la nariz con la manta. Pronto escuchï¿½ que tocaban la puerta:
 
-—Abuelita, soy yo, Caperucita Roja.
+ï¿½Abuelita, soy yo, Caperucita Roja.
 
 Con vos disimulada, tratando de sonar como la abuelita, el lobo dijo:
 
-—Pasa mi niña, estoy en camita.
+ï¿½Pasa mi niï¿½a, estoy en camita.
 
-Caperucita Roja pensó que su abuelita se encontraba muy enferma porque se veía muy pálida y sonaba terrible.
+Caperucita Roja pensï¿½ que su abuelita se encontraba muy enferma porque se veï¿½a muy pï¿½lida y sonaba terrible.
 
-—¡Abuelita, abuelita, qué ojos más grandes tienes!
+ï¿½ï¿½Abuelita, abuelita, quï¿½ ojos mï¿½s grandes tienes!
 
-—Son para verte mejor —respondió el lobo.
+ï¿½Son para verte mejor ï¿½respondiï¿½ el lobo.
 
-—¡Abuelita, abuelita, qué orejas más grandes tienes!
+ï¿½ï¿½Abuelita, abuelita, quï¿½ orejas mï¿½s grandes tienes!
 
-—Son para oírte mejor —susurró el lobo.
+ï¿½Son para oï¿½rte mejor ï¿½susurrï¿½ el lobo.
 
-—¡Abuelita, abuelita, que dientes más grandes tienes!
+ï¿½ï¿½Abuelita, abuelita, que dientes mï¿½s grandes tienes!
 
-—¡Son para comerte mejor!
+ï¿½ï¿½Son para comerte mejor!
 
-Con estas palabras, el malvado lobo tiró su manta y saltó de la cama. Asustada, Caperucita salió corriendo hacia la puerta. Justo en ese momento, un leñador se acercó a la puerta, la cual se encontraba entreabierta. La abuelita estaba escondida detrás de él.
+Con estas palabras, el malvado lobo tirï¿½ su manta y saltï¿½ de la cama. Asustada, Caperucita saliï¿½ corriendo hacia la puerta. Justo en ese momento, un leï¿½ador se acercï¿½ a la puerta, la cual se encontraba entreabierta. La abuelita estaba escondida detrï¿½s de ï¿½l.
 
-Al ver al leñador, el lobo saltó por la ventana y huyó espantado para nunca ser visto.
+Al ver al leï¿½ador, el lobo saltï¿½ por la ventana y huyï¿½ espantado para nunca ser visto.
 
-La abuelita y Caperucita Roja agradecieron al leñador por salvarlas del malvado lobo y todos comieron galleticas con leche. Ese día Caperucita Roja aprendió una importante lección:
+La abuelita y Caperucita Roja agradecieron al leï¿½ador por salvarlas del malvado lobo y todos comieron galleticas con leche. Ese dï¿½a Caperucita Roja aprendiï¿½ una importante lecciï¿½n:
 
-“Nunca debes hablar con extraños”.'),
-('Blancanieves', 'Érase una vez una joven y bella princesa llamada Blancanieves que vivía en un reino muy lejano con su padre y madrastra.
+ï¿½Nunca debes hablar con extraï¿½osï¿½.'),
+('Blancanieves', 'ï¿½rase una vez una joven y bella princesa llamada Blancanieves que vivï¿½a en un reino muy lejano con su padre y madrastra.
 
-Su madrastra, la reina, era también muy hermosa, pero arrogante y orgullosa. Se pasaba todo el día contemplándose frente al espejo. El espejo era mágico y cuando se paraba frente a él, le preguntaba:
+Su madrastra, la reina, era tambiï¿½n muy hermosa, pero arrogante y orgullosa. Se pasaba todo el dï¿½a contemplï¿½ndose frente al espejo. El espejo era mï¿½gico y cuando se paraba frente a ï¿½l, le preguntaba:
 
-—Espejito, espejito, ¿quién es la más hermosa del reino?
+ï¿½Espejito, espejito, ï¿½quiï¿½n es la mï¿½s hermosa del reino?
 
-Entonces el espejo respondía:
+Entonces el espejo respondï¿½a:
 
-— Tú eres la más hermosa de todas las mujeres.
+ï¿½ Tï¿½ eres la mï¿½s hermosa de todas las mujeres.
 
-La reina quedaba satisfecha, pues sabía que su espejo siempre decía la verdad. Sin embargo, con el pasar de los años, la belleza y bondad de Blancanieves se hacían más evidentes. Por todas sus buenas cualidades, superaba mucho la belleza física de la reina. Y llegó al fin un día en que la reina preguntó de nuevo:
+La reina quedaba satisfecha, pues sabï¿½a que su espejo siempre decï¿½a la verdad. Sin embargo, con el pasar de los aï¿½os, la belleza y bondad de Blancanieves se hacï¿½an mï¿½s evidentes. Por todas sus buenas cualidades, superaba mucho la belleza fï¿½sica de la reina. Y llegï¿½ al fin un dï¿½a en que la reina preguntï¿½ de nuevo:
 
-—Espejito, espejito, ¿quién es la más hermosa del reino?
+ï¿½Espejito, espejito, ï¿½quiï¿½n es la mï¿½s hermosa del reino?
 
-El espejo contestó:
+El espejo contestï¿½:
 
-—Blancanieves, a quien su bondad la hace ser aún más bella que tú.
+ï¿½Blancanieves, a quien su bondad la hace ser aï¿½n mï¿½s bella que tï¿½.
 
-La reina se llenó de ira y ordenó la presencia del cazador y le dijo:
+La reina se llenï¿½ de ira y ordenï¿½ la presencia del cazador y le dijo:
 
-—Llévate a la joven princesa al bosque y asegúrate de que las bestias salvajes se encarguen de ella.
+ï¿½Llï¿½vate a la joven princesa al bosque y asegï¿½rate de que las bestias salvajes se encarguen de ella.
 
-Con engaños, el cazador llevó a Blancanieves al bosque, pero cuando estaba a punto de cumplir las órdenes de la reina, se apiadó de la bella joven y dijo:
+Con engaï¿½os, el cazador llevï¿½ a Blancanieves al bosque, pero cuando estaba a punto de cumplir las ï¿½rdenes de la reina, se apiadï¿½ de la bella joven y dijo:
 
-—Corre, vete lejos, pobre muchacha. Busca un lugar seguro donde vivir.
+ï¿½Corre, vete lejos, pobre muchacha. Busca un lugar seguro donde vivir.
 
-Encontrándose sola en el gran bosque, Blancanieves corrió tan lejos como pudo hasta la llegada del anochecer. Entonces divisó una pequeña cabaña y entró en ella para dormir. Todo lo que había en la cabaña era pequeño. Había una mesa con un mantel blanco y siete platos pequeños, y con cada plato una cucharita. También, había siete pequeños cuchillos y tenedores, y siete jarritas llenas de agua. Contra la pared se hallaban siete pequeñas camas, una junto a la otra, cubiertas con colchas tan blancas como la nieve.
+Encontrï¿½ndose sola en el gran bosque, Blancanieves corriï¿½ tan lejos como pudo hasta la llegada del anochecer. Entonces divisï¿½ una pequeï¿½a cabaï¿½a y entrï¿½ en ella para dormir. Todo lo que habï¿½a en la cabaï¿½a era pequeï¿½o. Habï¿½a una mesa con un mantel blanco y siete platos pequeï¿½os, y con cada plato una cucharita. Tambiï¿½n, habï¿½a siete pequeï¿½os cuchillos y tenedores, y siete jarritas llenas de agua. Contra la pared se hallaban siete pequeï¿½as camas, una junto a la otra, cubiertas con colchas tan blancas como la nieve.
 
-Blancanieves estaba tan hambrienta y sedienta que comió un poquito de vegetales y pan de cada platito y bebió una gota de cada jarrita. Luego, quiso acostarse en una de las camas, pero ninguna era de su medida, hasta que finalmente pudo acomodarse en la séptima.
+Blancanieves estaba tan hambrienta y sedienta que comiï¿½ un poquito de vegetales y pan de cada platito y bebiï¿½ una gota de cada jarrita. Luego, quiso acostarse en una de las camas, pero ninguna era de su medida, hasta que finalmente pudo acomodarse en la sï¿½ptima.
 
-Cuando ya había oscurecido, regresaron los dueños de la cabaña. Eran siete enanos que cavaban y extraían oro y piedras preciosas en las montañas. Ellos encendieron sus siete linternas, y observaron que alguien había estado en la cabaña, pues las cosas no se encontraban en el mismo lugar.
+Cuando ya habï¿½a oscurecido, regresaron los dueï¿½os de la cabaï¿½a. Eran siete enanos que cavaban y extraï¿½an oro y piedras preciosas en las montaï¿½as. Ellos encendieron sus siete linternas, y observaron que alguien habï¿½a estado en la cabaï¿½a, pues las cosas no se encontraban en el mismo lugar.
 
-El primero dijo: —¿Quién se ha sentado en mi silla?
+El primero dijo: ï¿½ï¿½Quiï¿½n se ha sentado en mi silla?
 
-El segundo dijo: —¿Quién comió de mi plato?
+El segundo dijo: ï¿½ï¿½Quiï¿½n comiï¿½ de mi plato?
 
-El tercero dijo: —¿Quién mordió parte de mi pan?
+El tercero dijo: ï¿½ï¿½Quiï¿½n mordiï¿½ parte de mi pan?
 
-El cuarto dijo: —¿Quién tomó parte de mis vegetales?
+El cuarto dijo: ï¿½ï¿½Quiï¿½n tomï¿½ parte de mis vegetales?
 
-El quinto dijo: —¿Quién usó mi tenedor?
+El quinto dijo: ï¿½ï¿½Quiï¿½n usï¿½ mi tenedor?
 
-El sexto dijo: —¿Quién usó mi cuchillo?
+El sexto dijo: ï¿½ï¿½Quiï¿½n usï¿½ mi cuchillo?
 
-El séptimo dijo: —¿Quién bebió de mi jarra?
+El sï¿½ptimo dijo: ï¿½ï¿½Quiï¿½n bebiï¿½ de mi jarra?
 
-Entonces el primero observó una arruga en su cama y dijo: —Alguien se ha metido en mi cama.
+Entonces el primero observï¿½ una arruga en su cama y dijo: ï¿½Alguien se ha metido en mi cama.
 
-Y los demás fueron a revisar sus camas, diciendo: —Alguien ha estado en nuestras camas también.
+Y los demï¿½s fueron a revisar sus camas, diciendo: ï¿½Alguien ha estado en nuestras camas tambiï¿½n.
 
-Pero cuando el séptimo miró su cama, encontró a Blancanieves durmiendo plácidamente y llamó a los demás:
+Pero cuando el sï¿½ptimo mirï¿½ su cama, encontrï¿½ a Blancanieves durmiendo plï¿½cidamente y llamï¿½ a los demï¿½s:
 
-—¡Oh, cielos! —susurraron—. Qué encantadora muchacha
+ï¿½ï¿½Oh, cielos! ï¿½susurraronï¿½. Quï¿½ encantadora muchacha
 
-Cuando llegó el amanecer, Blancanieves se despertó muy asustada al ver a los siete enanos parados frente a ella. Pero los enanos eran muy amistosos y le preguntaron su nombre.
+Cuando llegï¿½ el amanecer, Blancanieves se despertï¿½ muy asustada al ver a los siete enanos parados frente a ella. Pero los enanos eran muy amistosos y le preguntaron su nombre.
 
-—Mi nombre es Blancanieves —respondió—, y les contó todo acerca de su malvada madrastra.
+ï¿½Mi nombre es Blancanieves ï¿½respondiï¿½, y les contï¿½ todo acerca de su malvada madrastra.
 
 Los enanos dijeron:
 
-—Si puedes limpiar nuestra casa, cocinar, tender las camas, lavar, coser y tejer, puedes quedarte todo el tiempo que quieras—. Blancanieves aceptó feliz y se quedó con ellos.
+ï¿½Si puedes limpiar nuestra casa, cocinar, tender las camas, lavar, coser y tejer, puedes quedarte todo el tiempo que quierasï¿½. Blancanieves aceptï¿½ feliz y se quedï¿½ con ellos.
 
-Pasó el tiempo y un día, la reina decidió consultar a su espejo y descubrió que la princesa vivía en el bosque. Furiosa, envenenó una manzana y tomó la apariencia de una anciana.
+Pasï¿½ el tiempo y un dï¿½a, la reina decidiï¿½ consultar a su espejo y descubriï¿½ que la princesa vivï¿½a en el bosque. Furiosa, envenenï¿½ una manzana y tomï¿½ la apariencia de una anciana.
 
-— Un bocado de esta manzana hará que Blancanieves duerma para siempre — dijo la malvada reina.
+ï¿½ Un bocado de esta manzana harï¿½ que Blancanieves duerma para siempre ï¿½ dijo la malvada reina.
 
-Al día siguiente, los enanos se marcharon a trabajar y Blancanieves se quedó sola.
+Al dï¿½a siguiente, los enanos se marcharon a trabajar y Blancanieves se quedï¿½ sola.
 
-Poco después, la reina disfrazada de anciana se acercó a la ventana de la cocina. La princesa le ofreció un vaso de agua.
+Poco despuï¿½s, la reina disfrazada de anciana se acercï¿½ a la ventana de la cocina. La princesa le ofreciï¿½ un vaso de agua.
 
-—Eres muy bondadosa —dijo la anciana—. Toma esta manzana como gesto de agradecimiento.
+ï¿½Eres muy bondadosa ï¿½dijo la ancianaï¿½. Toma esta manzana como gesto de agradecimiento.
 
-En el momento en que Blancanieves mordió la manzana, cayó desplomada. Los enanos, alertados por los animales del bosque, llegaron a la cabaña mientras la reina huía. Con gran tristeza, colocaron a Blancanieves en una urna de cristal. Todos tenían la esperanza de que la hermosa joven despertase un día.
+En el momento en que Blancanieves mordiï¿½ la manzana, cayï¿½ desplomada. Los enanos, alertados por los animales del bosque, llegaron a la cabaï¿½a mientras la reina huï¿½a. Con gran tristeza, colocaron a Blancanieves en una urna de cristal. Todos tenï¿½an la esperanza de que la hermosa joven despertase un dï¿½a.
 
-Y el día llegó cuando un apuesto príncipe que cruzaba el bosque en su caballo, vio a la hermosa joven en la urna de cristal y maravillado por su belleza, le dio un beso en la mejilla, la joven despertó al haberse roto el hechizo. Blancanieves y el príncipe se casaron y vivieron felices para siempre'),
-('La Cenicienta', 'Érase una vez una hermosa joven que vivía con su madrastra y dos hermanastras que la obligaban a hacer todo el trabajo de la casa. La pobre joven tenía que cocinar, limpiar y también lavarles la ropa.
+Y el dï¿½a llegï¿½ cuando un apuesto prï¿½ncipe que cruzaba el bosque en su caballo, vio a la hermosa joven en la urna de cristal y maravillado por su belleza, le dio un beso en la mejilla, la joven despertï¿½ al haberse roto el hechizo. Blancanieves y el prï¿½ncipe se casaron y vivieron felices para siempre'),
+('La Cenicienta', 'ï¿½rase una vez una hermosa joven que vivï¿½a con su madrastra y dos hermanastras que la obligaban a hacer todo el trabajo de la casa. La pobre joven tenï¿½a que cocinar, limpiar y tambiï¿½n lavarles la ropa.
 
-Cansada de trabajar, la joven se quedó dormida cerca a la chimenea y cuando se levantó con la cara sucia por las cenizas, sus hermanastras se rieron sin parar y desde entonces comenzaron a llamarla Cenicienta.
+Cansada de trabajar, la joven se quedï¿½ dormida cerca a la chimenea y cuando se levantï¿½ con la cara sucia por las cenizas, sus hermanastras se rieron sin parar y desde entonces comenzaron a llamarla Cenicienta.
 
-Un día llegó a la casa una invitación del rey a un baile para celebrar el cumpleaños del príncipe. Todas las jóvenes del reino fueron invitadas y Cenicienta estaba muy feliz. Sin embargo, cuando llegó el día de la fiesta, su madrastra y hermanastras le dijeron:
+Un dï¿½a llegï¿½ a la casa una invitaciï¿½n del rey a un baile para celebrar el cumpleaï¿½os del prï¿½ncipe. Todas las jï¿½venes del reino fueron invitadas y Cenicienta estaba muy feliz. Sin embargo, cuando llegï¿½ el dï¿½a de la fiesta, su madrastra y hermanastras le dijeron:
 
-—Cenicienta, tú no irás, te quedarás en casa limpiando y preparando la cena para cuando regresemos.
+ï¿½Cenicienta, tï¿½ no irï¿½s, te quedarï¿½s en casa limpiando y preparando la cena para cuando regresemos.
 
-Las tres mujeres salieron hacia el palacio, burlándose de Cenicienta.
+Las tres mujeres salieron hacia el palacio, burlï¿½ndose de Cenicienta.
 
-Cenicienta corrió al jardín y se sentó en un banco a llorar. Ella deseaba con todo su corazón poder ir al baile. De repente, apareció su hada madrina y le dijo:
+Cenicienta corriï¿½ al jardï¿½n y se sentï¿½ en un banco a llorar. Ella deseaba con todo su corazï¿½n poder ir al baile. De repente, apareciï¿½ su hada madrina y le dijo:
 
-—No llores Cenicienta, tú has sido muy buena y mereces ir al baile.
+ï¿½No llores Cenicienta, tï¿½ has sido muy buena y mereces ir al baile.
 
-Agitando su varita mágica, el hada madrina transformó una calabaza en un coche, tres ratones de campo en hermosos caballos, y a un perro viejo en un cochero. ¡Cenicienta no podía creer lo que veía!
+Agitando su varita mï¿½gica, el hada madrina transformï¿½ una calabaza en un coche, tres ratones de campo en hermosos caballos, y a un perro viejo en un cochero. ï¿½Cenicienta no podï¿½a creer lo que veï¿½a!
 
-— ¡Muchas gracias! —exclamó Cenicienta.
+ï¿½ ï¿½Muchas gracias! ï¿½exclamï¿½ Cenicienta.
 
-—Espera, no he terminado todavía —respondió el hada madrina con una sonrisa.
+ï¿½Espera, no he terminado todavï¿½a ï¿½respondiï¿½ el hada madrina con una sonrisa.
 
-Con el último movimiento de su varita mágica, transformó a Cenicienta. Le dio un vestido y un par de zapatillas de cristal, y le dijo:
+Con el ï¿½ltimo movimiento de su varita mï¿½gica, transformï¿½ a Cenicienta. Le dio un vestido y un par de zapatillas de cristal, y le dijo:
 
-—Ahora podrás ir al baile, sólo recuerda que debes regresar antes de la medianoche ya que a esa hora se terminará la magia.
+ï¿½Ahora podrï¿½s ir al baile, sï¿½lo recuerda que debes regresar antes de la medianoche ya que a esa hora se terminarï¿½ la magia.
 
-Cenicienta agradeció nuevamente al hada madrina y muy feliz se dirigió al palacio. Cuando entró, los asistentes, incluyendo sus hermanastras, no podían parar de preguntarse quién podría ser esa hermosa princesa.
+Cenicienta agradeciï¿½ nuevamente al hada madrina y muy feliz se dirigiï¿½ al palacio. Cuando entrï¿½, los asistentes, incluyendo sus hermanastras, no podï¿½an parar de preguntarse quiï¿½n podrï¿½a ser esa hermosa princesa.
 
-El príncipe, tan intrigado como los demás, la invitó a bailar. Después de bailar toda la noche, descubrió que Cenicienta no sólo era la joven más hermosa del reino, sino también la más amable y sincera que él jamás había conocido.
+El prï¿½ncipe, tan intrigado como los demï¿½s, la invitï¿½ a bailar. Despuï¿½s de bailar toda la noche, descubriï¿½ que Cenicienta no sï¿½lo era la joven mï¿½s hermosa del reino, sino tambiï¿½n la mï¿½s amable y sincera que ï¿½l jamï¿½s habï¿½a conocido.
 
 De repente, las campanadas del reloj se hicieron escuchar, era la medianoche. Cenicienta se estaba divirtiendo tanto que casi olvida las palabras del hada madrina.
 
-—¡Oh, no!, debo irme— le dijo al príncipe mientras corría fuera del salón de baile. Ella salió tan de prisa que perdió una de sus zapatillas de cristal en la escalinata.
+ï¿½ï¿½Oh, no!, debo irmeï¿½ le dijo al prï¿½ncipe mientras corrï¿½a fuera del salï¿½n de baile. Ella saliï¿½ tan de prisa que perdiï¿½ una de sus zapatillas de cristal en la escalinata.
 
-Decidido a encontrar a la hermosa joven, el príncipe tomó la zapatilla y visitó todas las casas del reino.
+Decidido a encontrar a la hermosa joven, el prï¿½ncipe tomï¿½ la zapatilla y visitï¿½ todas las casas del reino.
 
-Cuando el príncipe llegó a casa de Cenicienta, sus dos hermanas y hasta la madrastra intentaron sin suerte probarse el zapato de cristal. Él se encontraba a punto de marcharse cuando escuchó una voz:
+Cuando el prï¿½ncipe llegï¿½ a casa de Cenicienta, sus dos hermanas y hasta la madrastra intentaron sin suerte probarse el zapato de cristal. ï¿½l se encontraba a punto de marcharse cuando escuchï¿½ una voz:
 
-—¿Puedo probarme la zapatilla? —dijo Cenicienta.
+ï¿½ï¿½Puedo probarme la zapatilla? ï¿½dijo Cenicienta.
 
-La joven se probó la zapatilla y le quedó perfecta. El príncipe sabía que esta era la hermosa joven que estaba buscando. Fue así como Cenicienta y el príncipe se casaron y vivieron felices para siempre.'),
-('La bella y la bestia', 'Érase una vez un mercader que había perdido su enorme fortuna. Un día, debió viajar a un lugar muy lejano y les preguntó a sus hijas qué querían a su regreso. Sus dos hijas mayores pidieron joyas y vestidos, sin considerar la situación de su padre. Pero la hija menor, a quien todos llamaban Bella, dijo:
+La joven se probï¿½ la zapatilla y le quedï¿½ perfecta. El prï¿½ncipe sabï¿½a que esta era la hermosa joven que estaba buscando. Fue asï¿½ como Cenicienta y el prï¿½ncipe se casaron y vivieron felices para siempre.'),
+('La bella y la bestia', 'ï¿½rase una vez un mercader que habï¿½a perdido su enorme fortuna. Un dï¿½a, debiï¿½ viajar a un lugar muy lejano y les preguntï¿½ a sus hijas quï¿½ querï¿½an a su regreso. Sus dos hijas mayores pidieron joyas y vestidos, sin considerar la situaciï¿½n de su padre. Pero la hija menor, a quien todos llamaban Bella, dijo:
 
-—Padre, solo te pido una rosa de pétalos rojos.
+ï¿½Padre, solo te pido una rosa de pï¿½talos rojos.
 
-El mercader, en su camino de regreso, tuvo que atravesar un bosque muy espeso. Era una noche oscura y buscó un lugar donde dormir. Después de un rato, divisó a lo lejos un enorme castillo y se dirigió hacia él. Al acercarse a la puerta, esta se abrió por sí sola y al no escuchar respuesta, el mercader entró, fue al comedor, se sentó a la mesa y comió los alimentos servidos en ella. Luego, encontró una habitación y se acostó en una cama suave y esponjosa. Antes de dormir, se dijo:
+El mercader, en su camino de regreso, tuvo que atravesar un bosque muy espeso. Era una noche oscura y buscï¿½ un lugar donde dormir. Despuï¿½s de un rato, divisï¿½ a lo lejos un enorme castillo y se dirigiï¿½ hacia ï¿½l. Al acercarse a la puerta, esta se abriï¿½ por sï¿½ sola y al no escuchar respuesta, el mercader entrï¿½, fue al comedor, se sentï¿½ a la mesa y comiï¿½ los alimentos servidos en ella. Luego, encontrï¿½ una habitaciï¿½n y se acostï¿½ en una cama suave y esponjosa. Antes de dormir, se dijo:
 
-“El dueño de esta casa y sus sirvientes, no tardarán en dejarse ver. Espero me perdonen la libertad que me he tomado”.
+ï¿½El dueï¿½o de esta casa y sus sirvientes, no tardarï¿½n en dejarse ver. Espero me perdonen la libertad que me he tomadoï¿½.
 
-Al día siguiente, al salir del castillo, se detuvo a admirar un hermoso rosal y arrancó una de sus rosas, con la intención de llevársela a Bella.
+Al dï¿½a siguiente, al salir del castillo, se detuvo a admirar un hermoso rosal y arrancï¿½ una de sus rosas, con la intenciï¿½n de llevï¿½rsela a Bella.
 
-De repente, una bestia de aspecto feroz que llevaba una ropa de seda fina saltó de un arbusto:
+De repente, una bestia de aspecto feroz que llevaba una ropa de seda fina saltï¿½ de un arbusto:
 
-—¡Te di comida y una cama para dormir! ¡Y ahora, estás robando mis rosas! —dijo rugiendo.
+ï¿½ï¿½Te di comida y una cama para dormir! ï¿½Y ahora, estï¿½s robando mis rosas! ï¿½dijo rugiendo.
 
-El mercader estaba avergonzado y asustado, con voz temblorosa le ofreció disculpas. La bestia decidió dejarlo ir solo si prometía enviar a una de sus hijas al castillo. El mercader estuvo de acuerdo y corrió a casa. Desconsolado, les habló a sus hijas acerca del encuentro con la bestia. Las dos hermanas culparon a Bella por la suerte de su padre:
+El mercader estaba avergonzado y asustado, con voz temblorosa le ofreciï¿½ disculpas. La bestia decidiï¿½ dejarlo ir solo si prometï¿½a enviar a una de sus hijas al castillo. El mercader estuvo de acuerdo y corriï¿½ a casa. Desconsolado, les hablï¿½ a sus hijas acerca del encuentro con la bestia. Las dos hermanas culparon a Bella por la suerte de su padre:
 
-—Esto no hubiera sucedido si hubieras pedido vestidos o joyas —dijeron.
+ï¿½Esto no hubiera sucedido si hubieras pedido vestidos o joyas ï¿½dijeron.
 
-Sintiéndose responsable, Bella aceptó quedarse con la bestia.
+Sintiï¿½ndose responsable, Bella aceptï¿½ quedarse con la bestia.
 
-La bestia trataba a Bella con mucha bondad; le ofreció la habitación más grande y le permitió recorrer su hermoso jardín. En las noches, Bella se sentaba cerca de la chimenea y cosía mientras la bestia le hacía compañía. Al principio, sentía miedo de la bestia, pero poco a poco empezó a agradarle.
+La bestia trataba a Bella con mucha bondad; le ofreciï¿½ la habitaciï¿½n mï¿½s grande y le permitiï¿½ recorrer su hermoso jardï¿½n. En las noches, Bella se sentaba cerca de la chimenea y cosï¿½a mientras la bestia le hacï¿½a compaï¿½ï¿½a. Al principio, sentï¿½a miedo de la bestia, pero poco a poco empezï¿½ a agradarle.
 
-La bestia, sin poder contener sus sentimientos, le pidió a Bella que se casara con él, pero ella se negó. No podía olvidar su horripilante aspecto. Aun así, la bestia continuó tratándola con generosidad y mucho amor.
+La bestia, sin poder contener sus sentimientos, le pidiï¿½ a Bella que se casara con ï¿½l, pero ella se negï¿½. No podï¿½a olvidar su horripilante aspecto. Aun asï¿½, la bestia continuï¿½ tratï¿½ndola con generosidad y mucho amor.
 
-Como Bella extrañaba mucho a su padre, la bestia le dio un espejo mágico y dijo:
+Como Bella extraï¿½aba mucho a su padre, la bestia le dio un espejo mï¿½gico y dijo:
 
-—Mira el espejo y podrás ver a tu familia. Nunca te sentirás sola.
+ï¿½Mira el espejo y podrï¿½s ver a tu familia. Nunca te sentirï¿½s sola.
 
-Un día, Bella miró el espejo y y vio que su padre estaba muy enfermo. Entonces, fue donde la bestia suplicando y llorando:
+Un dï¿½a, Bella mirï¿½ el espejo y y vio que su padre estaba muy enfermo. Entonces, fue donde la bestia suplicando y llorando:
 
-—¡Por favor, déjame ir a casa! ¡Solo quiero ver a mi padre!
+ï¿½ï¿½Por favor, dï¿½jame ir a casa! ï¿½Solo quiero ver a mi padre!
 
-La bestia rugió encolerizada:
+La bestia rugiï¿½ encolerizada:
 
-— ¡No! Nunca dejarás este castillo.
+ï¿½ ï¿½No! Nunca dejarï¿½s este castillo.
 
-Al decirlo, salió de la habitación. Pero después de un tiempo, se acercó a Bella y dijo:
+Al decirlo, saliï¿½ de la habitaciï¿½n. Pero despuï¿½s de un tiempo, se acercï¿½ a Bella y dijo:
 
-—Puedes ir a quedarte con tu padre por siete días. Pero debes prometerme que regresarás.
+ï¿½Puedes ir a quedarte con tu padre por siete dï¿½as. Pero debes prometerme que regresarï¿½s.
 
-Bella, muy feliz, estuvo de acuerdo. Luego, se fue a quedar con su padre, quien pronto se recuperó con su presencia.
+Bella, muy feliz, estuvo de acuerdo. Luego, se fue a quedar con su padre, quien pronto se recuperï¿½ con su presencia.
 
-Bella se quedó con su familia durante más de los siete días, se había olvidado de la Bestia y su castillo. Pero una noche, tuvo una terrible pesadilla en la que vio a la bestia enferma de gravedad.
+Bella se quedï¿½ con su familia durante mï¿½s de los siete dï¿½as, se habï¿½a olvidado de la Bestia y su castillo. Pero una noche, tuvo una terrible pesadilla en la que vio a la bestia enferma de gravedad.
 
-Bella regresó al castillo de inmediato, al ver a la bestia débil y enferma le dijo entre sollozos:
+Bella regresï¿½ al castillo de inmediato, al ver a la bestia dï¿½bil y enferma le dijo entre sollozos:
 
-—Viviré contigo para siempre.
+ï¿½Vivirï¿½ contigo para siempre.
 
-Con solo decir estas palabras, la bestia se convirtió en un apuesto príncipe y dijo:
+Con solo decir estas palabras, la bestia se convirtiï¿½ en un apuesto prï¿½ncipe y dijo:
 
-—He vivido bajo una maldición todos estos años y solo el verdadero amor pudo romper el encanto.
+ï¿½He vivido bajo una maldiciï¿½n todos estos aï¿½os y solo el verdadero amor pudo romper el encanto.
 
 La bella y la bestia se casaron y vivieron felices para siempre.'),
-('La bella durmiente', 'Érase una vez un rey y una reina que vivían muy felices, pero anhelaban tener hijos. Después de muchos años de espera, la reina dio a luz a una hermosa niña y todo el reino los acompañó en su felicidad. Hubo una gran celebración y las hadas del reino fueron invitadas. Pero el rey olvidó invitar a una de ellas. Muy resentida, el hada olvidada se presentó al palacio.
+('La bella durmiente', 'ï¿½rase una vez un rey y una reina que vivï¿½an muy felices, pero anhelaban tener hijos. Despuï¿½s de muchos aï¿½os de espera, la reina dio a luz a una hermosa niï¿½a y todo el reino los acompaï¿½ï¿½ en su felicidad. Hubo una gran celebraciï¿½n y las hadas del reino fueron invitadas. Pero el rey olvidï¿½ invitar a una de ellas. Muy resentida, el hada olvidada se presentï¿½ al palacio.
 
-Pronto, llegó el momento en que las hadas le entregaban a la pequeña sus mejores deseos:
+Pronto, llegï¿½ el momento en que las hadas le entregaban a la pequeï¿½a sus mejores deseos:
 
-—Que crezca y se convierta en la mujer más bella del mundo —dijo la primera hada.
+ï¿½Que crezca y se convierta en la mujer mï¿½s bella del mundo ï¿½dijo la primera hada.
 
-—Que cante con la más dulce y melodiosa voz —dijo la segunda hada.
+ï¿½Que cante con la mï¿½s dulce y melodiosa voz ï¿½dijo la segunda hada.
 
-—Que siempre se comporte con gracia y elegancia —dijo la tercera hada.
+ï¿½Que siempre se comporte con gracia y elegancia ï¿½dijo la tercera hada.
 
-—Que sea bondadosa y paciente—dijo la siguiente hada.
+ï¿½Que sea bondadosa y pacienteï¿½dijo la siguiente hada.
 
-Cada una de las hadas, colmaron a la niña de hermosos deseos hasta que llegó el turno del hada que el rey olvidó invitar:
+Cada una de las hadas, colmaron a la niï¿½a de hermosos deseos hasta que llegï¿½ el turno del hada que el rey olvidï¿½ invitar:
 
-— Cuando la princesa cumpla dieciséis años, se pinchará el dedo con una aguja y ese será su final —dijo con todo el resentimiento que su corazón le permitía albergar en sus palabras.
+ï¿½ Cuando la princesa cumpla diecisï¿½is aï¿½os, se pincharï¿½ el dedo con una aguja y ese serï¿½ su final ï¿½dijo con todo el resentimiento que su corazï¿½n le permitï¿½a albergar en sus palabras.
 
-El rey, la reina y todo el reinado estaban atónitos, le suplicaron al hada que los disculpara por no haberla invitado y se retractara de lo que había dicho, pero el hada se negó a ambas propuestas.
+El rey, la reina y todo el reinado estaban atï¿½nitos, le suplicaron al hada que los disculpara por no haberla invitado y se retractara de lo que habï¿½a dicho, pero el hada se negï¿½ a ambas propuestas.
 
-Había una última hada que faltaba por presentar su deseo. Queriendo ayudar a la pequeña, le dijo al rey y a la reina:
+Habï¿½a una ï¿½ltima hada que faltaba por presentar su deseo. Queriendo ayudar a la pequeï¿½a, le dijo al rey y a la reina:
 
-—No puedo deshacer las palabras pronunciadas, pero puedo cambiar el curso de los eventos: la princesa no morirá cuando su dedo se pinche con la aguja, pero caerá en un sueño profundo durante cien años. Entonces, un príncipe vendrá y la despertará.
+ï¿½No puedo deshacer las palabras pronunciadas, pero puedo cambiar el curso de los eventos: la princesa no morirï¿½ cuando su dedo se pinche con la aguja, pero caerï¿½ en un sueï¿½o profundo durante cien aï¿½os. Entonces, un prï¿½ncipe vendrï¿½ y la despertarï¿½.
 
-Al escuchar esto, el rey y la reina se sintieron mejor. Pensando que existía la manera de detener el destino, el rey prohibió a todos los habitantes del reino utilizar agujas.
+Al escuchar esto, el rey y la reina se sintieron mejor. Pensando que existï¿½a la manera de detener el destino, el rey prohibiï¿½ a todos los habitantes del reino utilizar agujas.
 
-La princesa creció y se convirtió en una niña amable y de dulce corazón. Cuando cumplió sus dieciséis años, vio a una anciana coser:
+La princesa creciï¿½ y se convirtiï¿½ en una niï¿½a amable y de dulce corazï¿½n. Cuando cumpliï¿½ sus diecisï¿½is aï¿½os, vio a una anciana coser:
 
-—¿Puedo intentarlo? —le preguntó.
+ï¿½ï¿½Puedo intentarlo? ï¿½le preguntï¿½.
 
-La anciana le respondió:
+La anciana le respondiï¿½:
 
-— ¡Por supuesto, mi pequeña niña!
+ï¿½ ï¿½Por supuesto, mi pequeï¿½a niï¿½a!
 
-La princesa tomó la aguja e intentó enhebrar el hilo. En ese preciso momento se pinchó el dedo y cayó en un profundo sueño. La anciana, que era en realidad el hada resentida, la llevó de regreso al palacio y el rey y la reina la acostaron en su cama.
+La princesa tomï¿½ la aguja e intentï¿½ enhebrar el hilo. En ese preciso momento se pinchï¿½ el dedo y cayï¿½ en un profundo sueï¿½o. La anciana, que era en realidad el hada resentida, la llevï¿½ de regreso al palacio y el rey y la reina la acostaron en su cama.
 
-El reino que antes los había acompañado en la felicidad, los acompañó en la desgracia; todos cayeron en un profundo sueño.
+El reino que antes los habï¿½a acompaï¿½ado en la felicidad, los acompaï¿½ï¿½ en la desgracia; todos cayeron en un profundo sueï¿½o.
 
-Pasaron cien años. Un día, por cuenta del destino, un príncipe llegó al palacio. Él no podía dar crédito a lo que veían sus ojos: los guardas, sirvientes, gatos y hasta las vacas dormían y roncaban.
+Pasaron cien aï¿½os. Un dï¿½a, por cuenta del destino, un prï¿½ncipe llegï¿½ al palacio. ï¿½l no podï¿½a dar crï¿½dito a lo que veï¿½an sus ojos: los guardas, sirvientes, gatos y hasta las vacas dormï¿½an y roncaban.
 
-Al acercarse a la princesa, pensó que ella era el ser más hermoso del mundo y le plantó un beso en la mejilla. Inmediatamente, la princesa se despertó y junto con ella, el rey, la reina, los guardas, los sirvientes, los gatos y hasta las vacas abrieron sus ojos.
+Al acercarse a la princesa, pensï¿½ que ella era el ser mï¿½s hermoso del mundo y le plantï¿½ un beso en la mejilla. Inmediatamente, la princesa se despertï¿½ y junto con ella, el rey, la reina, los guardas, los sirvientes, los gatos y hasta las vacas abrieron sus ojos.
 
-El príncipe y la princesa se casaron y vivieron felices por siempre.');
+El prï¿½ncipe y la princesa se casaron y vivieron felices por siempre.');
 
 --Insertar datos en la tabla Preguntas
 INSERT INTO Preguntas
 VALUES 
-(1, '¿Cuál es el nombre del personaje principal?'),
-(1, '¿Dónde ocurre la historia?'),
-(2, '¿Qué descubre el personaje?'),
-(3, '¿Quién acompaña al protagonista?'),
-(4, '¿Qué sucede al final?');
+(1, 'ï¿½Cuï¿½l es el nombre del personaje principal?'),
+(1, 'ï¿½Dï¿½nde ocurre la historia?'),
+(2, 'ï¿½Quï¿½ descubre el personaje?'),
+(3, 'ï¿½Quiï¿½n acompaï¿½a al protagonista?'),
+(4, 'ï¿½Quï¿½ sucede al final?');
 
 --Insertar datos en la tabla Opciones
 INSERT INTO Opciones
@@ -303,7 +303,7 @@ VALUES
 (3, 'Un libro', 0),
 (4, 'Un perro', 1),
 (4, 'Un gato', 0),
-(4, 'Un pájaro', 0),
+(4, 'Un pï¿½jaro', 0),
 (5, 'El personaje se salva', 1),
 (5, 'El personaje se pierde', 0),
 (5, 'El personaje encuentra su hogar', 0);
