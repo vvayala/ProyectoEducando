@@ -183,7 +183,7 @@ def lecturas():
     titulo_label = tk.Label(ventana, text="Cuentos Disponibles", font=("Arial", 16, "bold"), wraplength=500)
     titulo_label.pack(pady=10)
 
-    crear_botones(ventana, cuentos, 0)
+    crear_botones(ventana, cuentos, usuarios)
     
     
     # def verLectura(nombre):
