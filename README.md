@@ -10,10 +10,15 @@ Objetivos: Diseñar un software en Python que permita aprender de forma interact
 
 
 
-# crear .exe del programa
 
-Instalar la siguiente libreria
+
+> [!NOTE]
+> crear .exe del programa
+
+> [!IMPORTANT]
+> Instalar la siguiente libreria
 > pip install pyinstaller
 
-comando para crear el empaquetado de los archivos
+> [!IMPORTANT]
+> comando para crear el empaquetado de los archivos
 > pyinstaller --onefile --windowed --add-data "cuentos;cuentos" login.py
