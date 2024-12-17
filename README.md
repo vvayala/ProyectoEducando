@@ -40,14 +40,19 @@ Objetivos: Diseñar un software en Python que permita aprender de forma interact
 -Manejo excepciones/control errores
 
 -Estadísticos (Valores, gráficos, …)
-> [!NOTE]
-> El proyecto se fundamenta en el analisis de datos y tambien en la implementacion de un software educativo que los estudiantes pueden optar para su rendimiento
+<!-- > [!NOTE]
+> El proyecto se fundamenta en el analisis de datos y tambien en la implementacion de un software educativo que los estudiantes pueden optar para su rendimiento -->
+
+<div>
+  <strong >Indice de educación</strong>
+</div>
+<img src="./assets/graficos/indiceEducacion.png">
 
 <div>
   <strong >Descripción:</strong>
-  <p>descripcion de grafica 1
+  <p>En la siguiente grafica se puede visualizar un primedio de estudiantes por niveles educativos</p>
 </div>
-<img src="./assets/grafico1.jpg">
+<img src="./assets/graficos/promedioEducativo.png">
 
 
 ## Funcionalidad extra:
