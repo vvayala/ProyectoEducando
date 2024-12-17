@@ -113,47 +113,12 @@ Seccion de comparacion entre usuarios
 
 
 
-- Tecnología/Herramientas usadas
+## Tecnología /Herramientas usadas para el software
 * Base de datos Relacion (SQL SERVER)
 * Lenguaje de consultas SQL
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## EJECUTABLE DEL SOFTWARE
 
 > [!NOTE]
 > crear .exe del programa
