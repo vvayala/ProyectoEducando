@@ -1,3 +1,8 @@
+## Proyecto Educando
+_Samsung Innovation Campus 2024_
+
+## 
+
 ## Tabla de contenidos
 Tabla de contenidos
 
@@ -11,11 +16,15 @@ Tabla de contenidos
 
 
 
-<h1 style="text-align:center; color:#f7a325;">ProyectoEducando</h1>
+<h1 style="">ProyectoEducando</h1>
 
-Proyecto Samsung 2024
-Objetivos: Diseñar un software en Python que permita aprender de forma interactiva con el uso del programa.
+_Proyecto Samsung 2024_
 
+## Descripción
+El proyecto Educando tiene como objetivo principal evaluar las ventajas y desventajas del uso de software educativo en el desarrollo de los estudiantes.
+Este software está diseñado con funcionalidades interactivas que faciliten el aprendizaje y permitan registrar el progreso de los usuarios.
+
+## Objetivos
 *	Desarrollar un software basado en Python, que permita mejorar el aprendizaje con el uso del programa.
 *	El programa puede contar con una sección para permitir el registro de usuarios.
 *	Puede contar con diferentes secciones: revisión de lecturas, sesión de entrenamiento, secciones de pruebas.
@@ -27,43 +36,152 @@ Objetivos: Diseñar un software en Python que permita aprender de forma interact
 
 ## Arquitectura
 
+La arquitectura del proyecto incluye:
+<ul>
+  <li>
+    Librerias Utilizadas
+    <ul>
+      <li>Pandas</li>
+      <li>Seaborn</li>
+      <li>Matplotlib.pyplo</li>
+      <li>Customtkinter</li>
+      <li>Datetime</li>
+      <li>Time</li>
+    </ul>
+  </li>
+  <li>
+    Datasets utilizados
+    <ul>
+      <li>
+        <a href="./Virtual_Reality_in_Education_Impact.csv">  Virtual_Reality_in_Education_Impact.csv</a>
+      </li>
+      <li>
+        <a href="./education.csv">Education.csv</a>
+      </li>
+      <li>
+        <a href="./students_adaptability_level_online_education.csv">Students_adaptability_level_online_education.csv</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+## Proceso
+El desarrollo del proyecto se divide en las siguientes etapas:
+<ul>
+  <li>
+    Fuente del Dataset:
+    <ul>
+      <li>
+        Los datos utilizados provienen de estudios educativos relacionados con la adaptabilidad y el impacto de la realidad virtual en la educación
+      </li>
+    </ul>
+  </li>
+  <li>
+    Limpieza de Datos:
+    <ul>
+      <li>
+            Se utilizó la librería Pandas para procesar y limpiar los datos.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Manejo de Excepciones y Control de Errores:
+    <ul>
+      <li>
+        Se implementaron técnicas en Python para garantizar la robustez del software.
+      </li>
+    </ul>
+  </li>
+</ul>
+
+## Funcionalidades Basadas en el Análisis de Datos
+<ul>
+  <li>
+    Evaluación de la Distribución de Edad y Adaptabilidad
+    <ul>
+      <li>Visualización de la distribución de edad de los estudiantes</li>
+      <li>Análisis de cómo los diferentes grupos de edad afectan los niveles de adaptabilidad al aprendizaje en línea.</li>
+    </ul>
+  </li>
 
 
-* Arquitectura del proyecto + imagen
+  <li>
+    Relación entre Nivel Educativo y Adaptabilidad
+    <ul>
+      <li>Evaluación del nivel de adaptabilidad según niveles educativos (escuela, universidad, etc.)</li>
+      <li>Identificación de factores educativos que afectan el rendimiento de los estudiantes</li>
+    </ul>
+  </li>
 
-* Proceso de desarrollo:
+  <li>
+    Impacto de Condiciones Externas en el Aprendizaje
+    <ul>
+      <li>Análisis del impacto de apagones eléctricos en la adaptabilidad al aprendizaje</li>
+      <li>Estudio de cómo la condición financiera de los estudiantes influye en el acceso a diferentes tipos de internet</li>
+    </ul>
+  </li>
 
--Fuente del dataset
+  <li>
+    Análisis del Índice de Educación
+    <ul>
+      <li>Distribución y evolución del índice de educación (EI) a lo largo del tiempo</li>
+      <li>Comparación entre población y el índice de educación, destacando relaciones significativas</li>
+    </ul>
+  </li>
 
--Limpieza de datos (img que lo valide)
+  <li>
+    Evaluación de Niveles Educativos
+    <ul>
+      <li>Cálculo del promedio de estudiantes en cada nivel educativo (kindergarten, escuela, universidad, etc.)</li>
+      <li>Identificación de brechas entre niveles educativos mediante análisis de datos</li>
+    </ul>
+  </li>
 
--Manejo excepciones/control errores
+  <li>
+    Correlación entre Variables Educativas
+    <ul>
+      <li>Generación de un mapa de calor para visualizar las correlaciones entre variables numéricas clave, como población, índice de educación y niveles educativos</li>
+    </ul>
+  </li>
+</ul>
+    
 
--Estadísticos (Valores, gráficos, …)
-<!-- > [!NOTE]
-> El proyecto se fundamenta en el analisis de datos y tambien en la implementacion de un software educativo que los estudiantes pueden optar para su rendimiento -->
+## Análisis de Datos / Estadísticas
 
 <div>
   <strong >Descripción:</strong>
   <p>
-    Analisis de educación por indice de educacion
+    En esta sección se analiza el nivel educativo mundial con base en índices de progreso
   </p>
 </div>
 <img src="./assets/graficos/indiceEducacion.png">
 
 <div>
   <strong >Descripción:</strong>
-  <p>En la siguiente grafica se puede visualizar un primedio de estudiantes por niveles educativos</p>
+  <p>Se muestra la distribución promedio de estudiantes según su nivel educativo</p>
 </div>
 <img src="./assets/graficos/promedioEducativo.png">
+
+El análisis de adaptabilidad mide cómo los estudiantes responden a entornos virtuales de aprendizaje.
 
 
 ## Funcionalidad extra:
 
 ## Integración del proyecto en una aplicacion web
 <p>  
-Se desarrollo una interfaz amigable donde los estudiantes pueden poner en practica sus capacidades de lectura
+Se desarrollo una interfaz amigable donde los estudiantes pueden poner en practica sus capacidades de lectura u otros objetivos
 </p>
+
+# Funcionalidades
+El software incluye las siguientes secciones:
+
+  * Registro de usuarios
+  * Revisiones de lecturas
+  * Sesiones de entrenamiento
+  * Registro del progreso del usuario
+  * Comparación de resultados
+  * Registro del tiempo de uso
+
 
 <p> 
 Tenemos la primer ventana que consta de Validacion de usuarios
@@ -104,7 +222,7 @@ Seccion de progreso de usuario
 </p>
 <img src="./assets/progreso.png">
 
-<br>
+<!-- <br> -->
 <p> 
 Seccion de comparacion entre usuarios
 </p>
@@ -113,15 +231,21 @@ Seccion de comparacion entre usuarios
 <br>
 
 
-
-
-
-## Tecnología /Herramientas usadas para el software
-* Base de datos Relacion (SQL SERVER)
+## Tecnología / Herramientas usadas para el software
+* Base de datos Relacional (SQL SERVER)
 * Lenguaje de consultas SQL
+* Lenguaje de programación Python
+
+## Librerias
+* Tkinter
+* customtkinter 
+* pyodbc
+* json
+* etc.
 
 
-## EJECUTABLE DEL SOFTWARE
+
+## Ejecutable del Software
 
 > [!NOTE]
 > crear .exe del programa
@@ -133,3 +257,15 @@ Seccion de comparacion entre usuarios
 > [!IMPORTANT]
 > comando para crear el empaquetado de los archivos
 > pyinstaller --onefile --windowed --add-data "cuentos;cuentos" login.py
+
+
+##
+## AGRADECIMIENTOS
+> [!NOTE]
+> Agradecemos a **Samsung Innovation Campus** y a todas las personas involucradas por su apoyo en el desarrollo del proyecto "Educando".  
+> Este trabajo no habría sido posible sin el esfuerzo del equipo:  
+> - Vilic Ayala Sandoval  
+> - Moisés Isaac Molina Corado  
+> - Carlos Fernando Pacheco Castro  
+> - Tania Sofia Franco Flamenco  
+> - Gabriel Armando Duran Cárcamo  
