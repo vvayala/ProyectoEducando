@@ -45,6 +45,7 @@ Objetivos: Diseñar un software en Python que permita aprender de forma interact
 
 <div>
   <strong >Indice de educación</strong>
+  <br>
 </div>
 <img src="./assets/graficos/indiceEducacion.png">
 
