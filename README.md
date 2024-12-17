@@ -44,8 +44,10 @@ Objetivos: Diseñar un software en Python que permita aprender de forma interact
 > El proyecto se fundamenta en el analisis de datos y tambien en la implementacion de un software educativo que los estudiantes pueden optar para su rendimiento -->
 
 <div>
-  <strong >Indice de educación</strong>
-  <br>
+  <strong >Descripción:</strong>
+  <p>
+    Analisis de educación por indice de educacion
+  </p>
 </div>
 <img src="./assets/graficos/indiceEducacion.png">
 
